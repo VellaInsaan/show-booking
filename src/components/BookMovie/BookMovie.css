@@ -1,0 +1,9 @@
+.book-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-buttons button {
+  margin-bottom: -5px;
+}

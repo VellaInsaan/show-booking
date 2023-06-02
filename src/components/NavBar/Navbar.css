@@ -1,0 +1,14 @@
+.logo {
+  background-color: #212529;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-name {
+  font-weight: bold;
+}
+
+.red {
+  color: #e92d37;
+}
