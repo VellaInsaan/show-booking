@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import './BookMovie.css';
+import { Link } from 'react-router-dom';
 
 export default function BookMovie({ movie, setSubmitted }) {
   const [show, setShow] = useState(false);
@@ -40,9 +41,20 @@ export default function BookMovie({ movie, setSubmitted }) {
 
   return (
     <>
-      <Button variant='danger' onClick={handleShow}>
-        <b>BOOK TICKETS</b>
-      </Button>
+      <div className='detail-button'>
+        <Button
+          variant='danger'
+          onClick={handleShow}
+          style={{ marginBottom: '-4px' }}
+        >
+          <b>BOOK TICKETS</b>
+        </Button>
+        <Link to='/' className='back'>
+          <Button variant='outline-secondary'>
+            <b>GO BACK</b>
+          </Button>
+        </Link>
+      </div>
 
       <Modal show={show} onHide={handleClose} centered={true}>
         <Modal.Header

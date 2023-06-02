@@ -7,3 +7,16 @@
 .book-buttons button {
   margin-bottom: -5px;
 }
+
+.back {
+  text-decoration: none;
+  color: rgb(200, 194, 194);
+}
+.back:hover {
+  color: white;
+}
+
+.detail-button {
+  display: flex;
+  flex-direction: column;
+}
